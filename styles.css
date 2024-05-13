@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/.vscode/bbackground.png'); 
+    background-size: 120%;
+    background-position: center;
+    color: #ffffff; 
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    padding: 10px;
+    z-index: 999;
+}
+
+.logo img {
+    max-height: 60px;
+    display: block;
+    margin-right: 10px;
+    float: right;
+}
+
+img {
+    max-width: 75%; 
+    height: auto;
+} 
+
+.describe{
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'Space Mono', monospace, 'Muli', sans-serif;
+}
+
+
+main {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 36px; /* Decreased font size for better readability */
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); ;
+    
+    
+}
+
+p {
+    font-size: 16px; /* Decreased font size for better readability */
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+    color: #ffffff;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px; /* Adjusted margin for better spacing */
+    background-image: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    color:#000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Space Mono', monospace, 'Muli', sans-serif;
+}
+
+.cta-buttons a:hover {
+    background-image: linear-gradient(to bottom, #e0e0e0, #d0d0d0);
+    background-color: black;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, black, black); /* Apply the same gradient background */
+    color: #000000; /* Set text color to black */
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Space Mono', monospace, 'Muli', sans-serif;
+    transition: background-color 0.3s ease; /* Add transition effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    
+    
+}
+.login-footer {
+    font-family: 'Space Mono', monospace, 'Muli', sans-serif; /* Set font family */
+    background-color: whitesmoke; /* Set background color */
+    color: #ffffff; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Add transition effect */
+    outline: none; /* Remove outline */
+    display: inline;
+}
+
+.login-footer:hover {
+    background-color: grey; /* Change background color on hover */
+}
+#login{
+    color: black;
+    text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+
+    
+    }
+    .cta-buttons {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .cta-buttons a {
+        margin-bottom: 5px; /* Adjust margin between buttons for smaller screens */
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+    }
+    /* Media query for mobile phones */
+    body {
+        background-size: cover; /* Changed background-size to cover */
+    }
+
+    header {
+        padding: 10px 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .logo img {
+        max-width: 100%; /* Ensured logo scales with screen size */
+        height: auto;
+    }
+
+    img {
+        max-width: 100%; /* Ensured images scale with screen size */
+        height: auto;
+    }
+
+    .describe {
+        font-size: 18px; /* Decreased font size for better readability on smaller screens */
+    }
+
+    main {
+        padding: 50px 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .content {
+        max-width: 90%; /* Adjusted max-width for better responsiveness */
+        padding: 20px 10px; /* Adjusted padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Decreased font size for better readability on smaller screens */
+    }
+
+    p {
+        font-size: 14px; /* Decreased font size for better readability on smaller screens */
+    }
+
+    .cta-buttons a {
+        padding: 8px 16px; /* Adjusted padding for better spacing on smaller screens */
+        font-size: 14px; /* Decreased font size for better readability on smaller screens */
+    }
+
+
+
+
+

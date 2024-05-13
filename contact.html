@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kurdistan Barber Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include any additional stylesheets or fonts here -->
+
+    <style>
+        /* Internal CSS styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Space Mono', monospace, 'Muli', sans-serif; /* Updated font-family */
+            background-image: url('/.vscode/bbackground.png');
+            background-size: 120%;
+            background-position: center;
+            color: #ffffff; /* Set text color to white for better contrast */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for header */
+            padding: 0 20px;
+        }
+
+        .logo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            z-index: 999;
+        }
+
+        .logo img {
+            max-height: 50px;
+            display: block;
+            margin-right: 10px;
+            float: right;
+        }
+
+        img {
+            max-width: 75%; /* Set maximum width to 100% of its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .describe {
+            font-size: 25px;
+            color: #ffffff;
+        }
+
+        main {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 36px; /* Decreased font size for better readability */
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-family: 'Abril Fatface', cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        p {
+            font-size: 16px; /* Decreased font size for better readability */
+            margin-bottom: 20px; /* Adjusted margin for better spacing */
+            color: #ffffff;
+        }
+
+        .contact-info {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .contact-info h2 {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .contact-form h2 {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #cccccc;
+        }
+
+        .map {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-image: linear-gradient(to bottom, black, black); /* Apply the same gradient background */
+            color: #000000; /* Set text color to black */
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-family: 'Space Mono', monospace, 'Muli', sans-serif;
+            transition: background-color 0.3s ease; /* Add transition effect */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        @media screen and (max-width: 480px) {
+
+    
+}
+.cta-buttons {
+    margin-top: 10px; /* Adjust margin for smaller screens */
+}
+
+.cta-buttons a {
+    margin-bottom: 5px; /* Adjust margin between buttons for smaller screens */
+    padding: 8px 16px; /* Adjust button padding for smaller screens */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./.vscode/pngegg.png" alt="Kurdish Logo">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="cta-buttons">
+                <a href="index.html" class="home">Home</a>
+                <a href="about.html" class="aboutus">About Us</a>
+                <a href="contact.html" class="contactus">Contact Us</a>
+                <a href="book.html" class="book-appointment">Book Appointment</a>
+                <a href="course.html" class="register-course">Register for Course</a>
+            </div>
+            <h1>Contact Us</h1>
+            <div class="contact-info">
+                <h2>Our Location</h2>
+                <p>Kurdistan Barber Shop</p>
+                <p>Baxtyari main street</p>
+                <p>Sulaimani, Kurdistan</p>
+                <h2>Phone</h2>
+                <p>+964 123 456 789</p>
+                <h2>Email</h2>
+                <p>info@kurdistanbarbershop.com</p>
+            </div>
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="submit_contact_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="map">
+                <!-- Embed a map using Google Maps or another map service -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26851.281829663275!2d45.434794684708924!3d35.56008854834673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400caebf8b24c44f%3A0x9596ad6728b0d3ec!2sSulaymaniyah%2C%20Iraq!5e0!3m2!1sen!2sus!4v1641751317395!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>© 2024 Kurdistan Barber Shop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
